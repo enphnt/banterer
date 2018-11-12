@@ -1,0 +1,47 @@
+{
+  "author": "nathan phennel",
+  "version": "1.0.0",
+  "bin": {
+    "banter": "cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/enphnt/banter/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "commander": "^2.17.0",
+    "lodash.sample": "^4.2.1"
+  },
+  "deprecated": false,
+  "description": "get some random banter via tags",
+  "engines": {
+    "node": ">= 4"
+  },
+  "files": [
+    "cli.js",
+    "jokes.json"
+  ],
+  "homepage": "https://github.com/nphennel/banter#readme",
+  "keywords": [
+    "cli",
+    "joke",
+    "jokes",
+    "banter",
+    "programming humor",
+    "humor",
+    "random joke",
+    "funny"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "banter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enphnt/banter.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "TODO",
+    "publish-gh-pages": "TODO"
+  }
+}
