@@ -19,9 +19,9 @@
   },
   "files": [
     "cli.js",
-    "jokes.json"
+    "banter.json"
   ],
-  "homepage": "https://github.com/nphennel/banter#readme",
+  "homepage": "https://github.com/enphnt/banter#readme",
   "keywords": [
     "cli",
     "joke",
