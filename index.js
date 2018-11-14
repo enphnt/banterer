@@ -6,8 +6,15 @@ const list = tag => {
   return filtered.map(j => j.text);
 };
 
+
 exports.list = list;
+
 exports.random = tag => {
   const filtered = list(tag);
-  return sample(filtered);
+
+  if (filtered.length <= 0) {
+    return "\nSorry, no banter quite like that.\n"
+  } else {
+    return sample(filtered);
+  }
 };
