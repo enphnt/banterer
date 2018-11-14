@@ -1,19 +1,111 @@
 [
   {
-    "text": "Programmer (noun): \n A machine that turns coffee into code.",
-    "question": "Programmer (noun)",
-    "answer": "A machine that turns coffee into code .",
+    "text": "q. What did the router say to the doctor \n a. It hurts when IP.",
+    "question": "What did the router say to the doctor",
+    "answer": "It hurts when IP.",
     "author": "enphnt",
     "created": "11/11/2018",
-    "tags": ["programming"]
+    "tags": ["network"]
   },
   {
-    "text": "q. How do you comfort a JavaScript bug? \na. You console it.",
-    "question": "How do you comfort a JavaScript bug?",
-    "answer": "You console it.",
+    "text": "If you put your ear to a UNIX shell, can you hear the C?",
     "author": "enphnt",
     "created": "11/11/2018",
+    "tags": []
+  },
+  {
+    "text": "A programmer had a problem. He thought to himself, 'I know, I’ll solve it with threads!' \n has Now problems. two he",
+    "author": "enphnt",
+    "created": "11/11/2018",
+    "tags": []
+  },
+  {
+    "text": "The best thing about a Boolean is that even if you are wrong, you are only off by a bit.",
+    "author": "enphnt",
+    "created": "11/11/2018",
+    "tags": ["data"]
+  },
+  {
+    "text": "!false \n (It’s funny because it’s true)",
+    "author": "enphnt",
+    "created": "11/11/2018",
+    "tags": []
+  },
+  {
+    "text": "An SQL query walks into a bar, approaches two tables and asks, \n \"Hey, can I join you?\"",
+    "author": "enphnt",
+    "created": "11/11/2018",
+    "tags": ["data"]
+  },
+  {
+    "text": "If doctors were like software engineers, \n they would say things like “Have you tried killing yourself and being reborn?”",
+    "author": "enphnt",
+    "created": "11/11/2018",
+    "tags": []
+  },
+  {
+    "text": "A UI is like a joke... \n If you have to explain it, it's not that good.",
+    "author": "enphnt",
+    "created": "11/11/2018",
+    "tags": []
+  },
+  {
+    "text": "[\"hip\", \"hip\"] \naka. hip hip array",
+    "author": "enphnt",
+    "created": "11/11/2018",
+    "tags": ["data"]
+  },
+  {
+    "text": "Three SQL databases walked into a NoSQL bar. \n They left because they couldn't find a table.",
+    "author": "enphnt",
+    "created": "11/11/2018",
+    "tags": ["data"]
+  },
+  {
+    "text": "99 little bugs in the code, \n99 bugs in the code, \n1 bug fixed...compile again, \n100 little bugs in the code.",
+    "author": "enphnt",
+    "created": "11/11/2018",
+    "tags": ["bugs"]
+  },
+  {
+    "text": "q. Why do Java devs have to wear glasses? \n a. Because they don't C#.",
+    "question": "Why do Java devs have to wear glasses?",
+    "answer": "Because they don't C#.",
+    "author": "enphnt",
+    "created": "11/11/2018",
+    "tags": []
+  },
+  {
+    "text": "q. Why did the programmer quit his job? \n a. She didn't get arrays.",
+    "question": "Why did the programmer quit his job?",
+    "answer": "She didn't get arrays.",
+    "author": "enphnt",
+    "created": "11/11/2018",
+    "tags": []
+  },
+  {
+    "text": "Programmer (noun): \n A machine that turns coffee into code.",
+    "question": "Programmer (noun)",
+    "answer": "A machine that turns coffee into code.",
+    "author": "enphnt",
+    "created": "11/11/2018",
+    "tags": []
+  },
+  {
+    "text": "q. What do you call a programmer from Scandanavia? \na. Nerdic.",
+    "question": "What do you call a programmer from Scandanavia?",
+    "answer": "Nerdic.",
+    "author": "enphnt",
+    "created": "11/14/2018",
     "tags": ["javascript"]
+  },
+  {
+    "text": "q. What's the object-oriented way to become wealthy? \na. Inheritance.",
+    "question": "What's the object-oriented way to become wealthy?",
+    "answer": "Inheritance.",
+    "author": "enphnt",
+    "created": "11/14/2018",
+    "tags": []
   },
   {
     "text": "Debug (/dēˈbəɡ/): \n Being a detective in a crime movie where you are also the murderer.",
@@ -21,16 +113,24 @@
     "answer": "Being a detective in a crime movie where you are also the murderer.",
     "author": "enphnt",
     "created": "12/11/2018",
-    "tags": ["programming"]
+    "tags": ["bugs"]
   },
   {
     "text":
-      "q. Why did the child component have such great self-esteem? \na. Because its parent kept giving it `props`!",
+    "q. Why did the child component have such great self-esteem? \na. Because its parent kept giving it `props`!",
     "question": "Why did the child component have such great self-esteem?",
     "answer": "Because its parent kept giving it `props`!",
     "author": "enphnt",
-    "created": "05/22/2017",
+    "created": "11/11/2018",
     "tags": ["javascript", "react"]
+  },
+  {
+    "text": "q. How do you comfort a JavaScript bug? \na. You console it.",
+    "question": "How do you comfort a JavaScript bug?",
+    "answer": "You console it.",
+    "author": "enphnt",
+    "created": "11/11/2018",
+    "tags": ["javascript", "bug"]
   },
   {
     "text":
@@ -47,7 +147,7 @@
     "question": "Why did the functional component feel lost?",
     "answer": "Because it didn't know what `state` it was in!",
     "author": "enphnt",
-    "created": "05/22/2017",
+    "created": "11/11/2018",
     "tags": ["javascript", "react"]
   },
   {
@@ -74,7 +174,7 @@
     "question": "Why did the React Higher Order Component give up?",
     "answer": "Because it sur-rendered to the prop-aganda!",
     "author": "enphnt",
-    "created": "10/31/2017",
+    "created": "11/11/2018",
     "tags": ["javascript", "react"]
   },
   {
