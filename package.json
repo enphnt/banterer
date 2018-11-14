@@ -40,8 +40,6 @@
     "url": "git+https://github.com/enphnt/banterer.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "TODO",
-    "publish-gh-pages": "TODO"
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
