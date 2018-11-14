@@ -1,4 +1,4 @@
-# banter
+# banterer
 
  - lighthearted remarks for when you need to break up the monotony
 
@@ -6,24 +6,24 @@
 ## Install
 
 ```
-$ npm install banter
+$ npm install banterer
 ```
 
 ## Usage
 
 ```js
-const banter = require("banter");
+const banterer = require("banterer");
 
-console.log(banter.random()); // returns random banter
-console.log(banter.random("react")); // returns random react banter
-console.log(banter.list()); // returns an array of all banter
-console.log(banter.list("react")); // returns an array of all react banter
+console.log(banterer.random()); // returns random banter
+console.log(banterer.random("react")); // returns random react banter
+console.log(banterer.list()); // returns an array of all banter
+console.log(banterer.list("react")); // returns an array of all react banter
 ```
 
 ## CLI
 
 ```bash
-$ banter [options]
+$ banterer [options]
 ```
 
 ### Options
@@ -41,12 +41,12 @@ $ banter [options]
 ### Examples
 
 ```bash
-$ banter
-$ banter --tag react
-$ banter -t javascript
-$ banter --list
-$ banter -l
-$ banter -lt react
+$ banterer
+$ banterer --tag react
+$ banterer -t javascript
+$ banterer --list
+$ banterer -l
+$ banterer -lt react
 ```
 
 ## Tags
@@ -55,6 +55,8 @@ $ banter -lt react
 - react
 - java
 - c#
+- network
+- data
 - node
 - coffeescript
 - css

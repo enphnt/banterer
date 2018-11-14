@@ -2,10 +2,10 @@
   "author": "nathan phennel",
   "version": "1.0.0",
   "bin": {
-    "banter": "cli.js"
+    "banterer": "cli.js"
   },
   "bugs": {
-    "url": "https://github.com/enphnt/banter/issues"
+    "url": "https://github.com/enphnt/banterer/issues"
   },
   "bundleDependencies": false,
   "dependencies": {
@@ -21,7 +21,7 @@
     "cli.js",
     "banter.json"
   ],
-  "homepage": "https://github.com/enphnt/banter#readme",
+  "homepage": "https://github.com/enphnt/banterer#readme",
   "keywords": [
     "cli",
     "joke",
@@ -34,10 +34,10 @@
   ],
   "license": "ISC",
   "main": "index.js",
-  "name": "banter",
+  "name": "banterer",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/enphnt/banter.git"
+    "url": "git+https://github.com/enphnt/banterer.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
