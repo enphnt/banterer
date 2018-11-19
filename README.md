@@ -1,6 +1,6 @@
-# banterer
+# 🗣 banterer
 
- - lighthearted remarks for when you need to break up the monotony
+ - lighthearted and, at times, inspiring remarks on software for when you need to break up the monotony
 
 
 ## Install
@@ -30,7 +30,7 @@ $ banterer [options]
 
 ```
 -v, --version      output the version number
--l, --list         list all the jokes
+-l, --list         list all banter
 -t, --tag <value>  filter banter with tag
 -j, --jokes        return jokes only (WIP)
 -q, --quotes       return quotes only (WIP)
@@ -50,16 +50,4 @@ $ banterer -lt react
 ```
 
 ## Tags
-
-- javascript
-- react
-- java
-- c#
-- network
-- data
-- node
-- coffeescript
-- css
-- ember
-- backbone
-- knockout
+Tags consider a curated list of tags associated with the banter as well as the text of the quote to determine matches.

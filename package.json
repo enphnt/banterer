@@ -1,6 +1,6 @@
 {
   "author": "nathan phennel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bin": {
     "banterer": "cli.js"
   },
@@ -13,9 +13,9 @@
     "lodash.sample": "^4.2.1"
   },
   "deprecated": false,
-  "description": "get some random banter via tags",
+  "description": "get random software banter in your terminal",
   "engines": {
-    "node": ">= 4"
+    "node": ">= 8"
   },
   "files": [
     "cli.js",
