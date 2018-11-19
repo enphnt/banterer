@@ -2,7 +2,9 @@
 
 const program = require("commander");
 const banter = require("./index");
-const package = require('./package.json');
+const package = require("./package.json");
+const cowsay = require("cowsay");
+const fs = require("fs");
 
 program
   .description("banter - lighthearted remarks for when you need to break up the monotony")
@@ -27,8 +29,25 @@ program.on("--help", () => {
 
 program.parse(process.argv);
 
-console.log(
-  program.list
-    ? banter.list(program.tag).join("\n")
-    : banter.random(program.tag)
-);
+
+const testFolder = __dirname + "/node_modules/cowsay/cows/";
+let possibleCows = [];
+
+
+fs.readdir(testFolder, (err, files) => {
+  files.forEach(file => {
+    possibleCows.push(file.slice(0, -4));
+  });
+  const randomIndex = Math.floor(Math.random() * possibleCows.length)
+  console.log(
+    "\n",
+    program.list
+      ? banter.list(program.tag).join("\n")
+      : cowsay.say({
+        text: banter.random(program.tag),
+        W: 60, // Specifies roughly where the message should be wrapped. equivalent to cowsay -W
+        f: possibleCows[randomIndex],
+      }),
+    "\n"
+  );
+});
