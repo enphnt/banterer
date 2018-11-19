@@ -2,10 +2,23 @@ const banter = require("./banter.json");
 const sample = require("lodash.sample");
 
 const list = tag => {
-  const filtered = tag ? banter.filter(j => j.tags.includes(tag)) : banter;
-  return filtered.map(j => j.text);
-};
+  let filtered;
 
+  if (tag) {
+    filtered = banter.filter(banterItem => {
+      const tagMatches = banterItem.tags.includes(tag);
+      const textMatches = banterItem.text.includes(tag);
+
+      return tagMatches + textMatches;
+    });
+  } else {
+    filtered = banter;
+  }
+
+  return filtered.map(filteredItem => {
+    return `${filteredItem.text}\n\n --${filteredItem.author}`
+  });
+};
 
 exports.list = list;
 
