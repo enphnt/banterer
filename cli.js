@@ -29,12 +29,10 @@ program.on("--help", () => {
 
 program.parse(process.argv);
 
-
-const testFolder = __dirname + "/node_modules/cowsay/cows/";
+const cowFolder = "./node_modules/cowsay/cows/";
 let possibleCows = [];
 
-
-fs.readdir(testFolder, (err, files) => {
+fs.readdir(cowFolder, (err, files) => {
   files.forEach(file => {
     possibleCows.push(file.slice(0, -4));
   });
