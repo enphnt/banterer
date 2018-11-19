@@ -5,6 +5,7 @@ const banter = require("./index");
 const package = require("./package.json");
 const cowsay = require("cowsay");
 const fs = require("fs");
+const path = require("path");
 
 program
   .description("banter - lighthearted remarks for when you need to break up the monotony")
@@ -30,9 +31,11 @@ program.on("--help", () => {
 program.parse(process.argv);
 
 const cowFolder = "./node_modules/cowsay/cows/";
+const route = path.resolve(__dirname, cowFolder);
+
 let possibleCows = [];
 
-fs.readdir(cowFolder, (err, files) => {
+fs.readdir(route, (err, files) => {
   files.forEach(file => {
     possibleCows.push(file.slice(0, -4));
   });
