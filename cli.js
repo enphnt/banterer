@@ -36,19 +36,33 @@ const route = path.resolve(__dirname, cowFolder);
 let possibleCows = [];
 
 fs.readdir(route, (err, files) => {
-  files.forEach(file => {
-    possibleCows.push(file.slice(0, -4));
-  });
-  const randomIndex = Math.floor(Math.random() * possibleCows.length)
-  console.log(
-    "\n",
-    program.list
-      ? banter.list(program.tag).join("\n")
-      : cowsay.say({
-        text: banter.random(program.tag),
-        W: 60, // Specifies roughly where the message should be wrapped. equivalent to cowsay -W
-        f: possibleCows[randomIndex],
-      }),
-    "\n"
-  );
+  if (files && files.length > 0) {
+    files.forEach(file => {
+      possibleCows.push(file.slice(0, -4));
+    });
+    const randomIndex = Math.floor(Math.random() * possibleCows.length)
+    console.log(
+      "\n",
+      program.list
+        ? banter.list(program.tag).join("\n")
+        : cowsay.say({
+          text: banter.random(program.tag),
+          W: 60, // Specifies roughly where the message should be wrapped. equivalent to cowsay -W
+          f: possibleCows[randomIndex],
+        }),
+      "\n"
+    );
+  } else {
+    console.log(
+      "\n",
+      program.list
+        ? banter.list(program.tag).join("\n")
+        : cowsay.say({
+          text: banter.random(program.tag),
+          W: 60, // Specifies roughly where the message should be wrapped. equivalent to cowsay -W
+          f: "stegosaurus",
+        }),
+      "\n"
+    );
+  }
 });
