@@ -1,6 +1,6 @@
 {
   "author": "nathan phennel",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "bin": {
     "banterer": "cli.js"
   },
@@ -14,7 +14,7 @@
     "lodash.sample": "^4.2.1"
   },
   "deprecated": false,
-  "description": "get random software banter in your terminal",
+  "description": "Inspirational software banter in your terminal",
   "engines": {
     "node": ">= 8"
   },
