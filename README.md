@@ -37,9 +37,6 @@ console.log(banterer.list("react")); // returns an array of all react banter
 -v, --version      output the version number
 -l, --list         list all banter
 -t, --tag <value>  filter banter with tag
--j, --jokes        return jokes only (WIP)
--q, --quotes       return quotes only (WIP)
--a, --add          interactively add a record (WIP)
 -h, --help         output usage information
 ```
 
