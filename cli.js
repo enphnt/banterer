@@ -14,55 +14,34 @@ program
   .option("-t, --tag <value>", "filter banter with tag")
   .option("-j, --jokes", "return jokes only (WIP)")
   .option("-q, --quotes", "return quotes only (WIP)")
-  .option("-a, --add", "interactively add a record (WIP)");
-
-program.on("--help", () => {
-  console.log("");
-  console.log("Examples:");
-  console.log("  $ banter");
-  console.log("  $ banter --tag react");
-  console.log("  $ banter -t javascript");
-  console.log("  $ banter --list");
-  console.log("  $ banter -l");
-  console.log("  $ banter -lt react");
-  console.log("");
-});
-
-program.parse(process.argv);
+  .option("-a, --add", "interactively add a record (WIP)")
+  .on("--help", () => {
+    console.log("\nExamples:");
+    ["", "--tag react", "-t javascript", "--list", "-l", "-lt react"].forEach(cmd => console.log(`  $ banter ${cmd}`));
+    console.log("");
+  })
+  .parse(process.argv);
 
 const cowFolder = "./node_modules/cowsay/cows/";
 const route = path.resolve(__dirname, cowFolder);
 
-let possibleCows = [];
-
 fs.readdir(route, (err, files) => {
   if (files && files.length > 0) {
-    files.forEach(file => {
-      possibleCows.push(file.slice(0, -4));
+    const possibleCows = files.filter(file => {
+      const cowPath = path.join(route, file);
+      const cowContent = fs.readFileSync(cowPath, 'utf8');
+      return cowContent.length <= 1100 && cowContent.length >= 100 &&
+        // cow content doesn't contain 'you'
+        cowContent.indexOf("you") === -1;
+    }).map(file => file.slice(0, -4));
+
+    const randomCow = possibleCows[Math.floor(Math.random() * possibleCows.length)] || "stegosaurus";
+    const output = program.list ? banter.list(program.tag).join("\n") : cowsay.say({
+      text: banter.random(program.tag),
+      W: 50,
+      f: randomCow,
     });
-    const randomIndex = Math.floor(Math.random() * possibleCows.length)
-    console.log(
-      "\n",
-      program.list
-        ? banter.list(program.tag).join("\n")
-        : cowsay.say({
-          text: banter.random(program.tag),
-          W: 60, // Specifies roughly where the message should be wrapped. equivalent to cowsay -W
-          f: possibleCows[randomIndex],
-        }),
-      "\n"
-    );
-  } else {
-    console.log(
-      "\n",
-      program.list
-        ? banter.list(program.tag).join("\n")
-        : cowsay.say({
-          text: banter.random(program.tag),
-          W: 60, // Specifies roughly where the message should be wrapped. equivalent to cowsay -W
-          f: "stegosaurus",
-        }),
-      "\n"
-    );
+
+    console.log("\n", output, "\n");
   }
 });
